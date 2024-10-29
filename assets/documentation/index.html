@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGME-340 Project 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Tutorial</h2>
+        <p>Welcome to Arcade Arena! Do you have what it takes to run your own arcade?
+            Fear not! This section will serve as a brief introduction to the game to
+            help you get started on the right foot!
+        </p>
+        <h3>Overview</h3>
+        <hr>
+        <p>After renting a location and filing the necessary paperwork, your arcade is now
+            open for business!... However, it seems you've neglected one crucial step - securing an inventory!
+            With an empty building and whatever cash you found left in your pockets, you look forward to the future with
+            excitement!
+        </p>
+        <h3>Get Some Machines!</h3>
+        <hr>
+        <p>As the owner of an arcade, your first priority should be securing machines for your customers to play! Visit
+            the "Store" tab below to view a list of arcade machines and decorations available for purchase. Each item
+            has a list of stats that will affect your revenue and popularity, so be sure to shop carefully!</p>
+        <h3>Decorating Your Arcade</h3>
+        <hr>
+        <p>Now that you've purchased some items, visit the "Arcade" tab to place them in your arcade. Items won't do
+            anything
+            unless they are actually placed in your arcade, so don't forget to do that. You can tap a tile on your floor plan 
+            to select that space, then tap the bottom buttons to place the corresponding item onto that spot. Press the virtual buttons to rotate the item, or return
+            something to the inventory
+            by tapping the "X" button.
+        </p>
+        <h3>Open For Business!</h3>
+        <hr>
+        <p>Once you've decorated the arcade to your liking, press the button below your arcade to open for the day.
+            After a brief amount of time, you'll see several values, such as the number of visitors you've had, and
+            your revenue for the day. <strong>Every seven days, you'll need to pay some bills</strong>, so make sure you
+            have enough money
+            in your account by the deadline, or it's game over!
+        </p>
+        <h3>What Should I Do?</h3>
+        <hr>
+        <p>Well, in the end, that's your choice! This arcade is yours to do with as you please... as long as you can
+            keep up
+            your regularly scheduled payments. However, if you're looking for some extra goals to make some quick cash,
+            check out
+            the "Tasks" page. Various tasks will appear here, and you'll be rewarded for each objective you complete.
+        </p>
+    </section>
+    <section>
+        <h2>Documentation</h2>
+        <p style="text-align: center;">May 2, 2024<br><em>Arcade Arena</em> made by Colby Heaton for Project 3 of IGME-340.
+        </p>
+        <h3>Proposal</h3>
+        <hr>
+        <iframe class="pdf" src="p3p.pdf"></iframe>
+        <h3>Process</h3>
+        <hr>
+        <p>I really feel like this was the first time I was able to "spread my wings" in this class, and I am grateful for the opportunity.
+            After coming up with an idea and creating the proposal, I started development by laying out the architecture for my app. Implementing
+            a paging functionality was my first priority, which I was able to do easily with the go_router package. That was my submission for the project prototype,
+            which... was not the best showcase of my ability. I still had a lot to do, but now that my schedule was starting to clear up, I dedicated more and
+            more time to this project. Eventually, I got on a roll, and worked for days on end. The feedback for my prototype mentioned using a webview for my documentation,
+            so I worked on that first. I created this HTML page with some basic CSS, and used the webview package to launch it locally. I included links below to the different
+            packages I used, but when the user would click on them, it would open the links inside this webview, with no way to return to the documentation. Therefore, I utilized
+            the url_launcher package in addition to the webview package to make external links open in the device's browser. Now that the "About" page was handled, I delved into creating
+            the game's data. I drew the sprites, created icons and splash screens, and started to work on the store page. Using a list view widget for the store seemed like a natural fit,
+            and to my delight, it worked wonders. Starting work with the Flame engine was daunting, since I hadn't had any hands-on experience with it yet. However, after a few hours of
+            messing around, and following tutorials on the Flame website, I was able to create something that I'm proud of. I'm not sure how the game looks on other devices, but it looks
+            nice on the Pixel 7 that I used for testing. I attempted to use shared_preferences to save the user's arcade layout by converting it into a JSON string, but it didn't work out
+            the best. Only the current day and money are saved in the final version, which are a little... useless. In the end, creating this project was a mental pain in the ass, but I'm delighted
+            with the results, and I'm glad to have hands-on experience with mobile development.
+        </p>
+        <h3>Fonts</h3>
+        <hr>
+        <ul>
+            <li><a target="_blank" href="https://fonts.google.com/specimen/Pixelify+Sans">PixelifySans</a> via Google
+                Fonts.</li>
+        </ul>
+
+        <h3>Flutter Packages</h3>
+        <hr>
+        <ul>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/go_router">go_router</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/webview_flutter">webview_flutter</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/flutter_native_splash">flutter_native_splash</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/flutter_launcher_icons">flutter_launcher_icons</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/url_launcher">url_launcher</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/flame">flame</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://pub.dev/packages/shared_preferences">shared_preferences</a>
+            </li>
+        </ul>
+        
+        <h3>Images</h3>
+        <hr>
+        <p>All sprites were created by me.</p>
+    </section>
+</body>
+
+</html>
